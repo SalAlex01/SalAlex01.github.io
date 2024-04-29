@@ -1,0 +1,210 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Historia</a>
+          <a href="#secc2">Primera Sala</a>
+          <a href="#secc3">Segunda Sala</a>
+          <a href="#secc4">Tercera Sala</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Historia</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Museo Land Trust es una institución artística itinerante que se establece durante un mes en una ciudad europea diferente cada año. En su edición de este año, el museo se encuentra en Barcelona, España. El objetivo del museo es proporcionar una plataforma para que los artistas emergentes y establecidos de la ciudad sede expongan su trabajo y ganen reconocimiento. Nacido en Hannover, Alemania, el concepto fue continuado por Róterdam, Países Bajos, y oficialmente establecido en Norwich, Inglaterra, donde recibió su nombre actual.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		       
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>La obra de Johan van Hell “Arbeidsongeval” de 1930 fue presentada en el Land Trust Rotterdam en 2022</p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p>Para el Land Trust Hannover 2020, la obra de Kurt Schwitters “The mental doctor” 1919 fue presentada entre los elementos más destacados.</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Primera Sala</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Gerardo Parra es un artista contemporáneo de Barcelona, España. Nacido en una familia de artesanos, desde temprana edad mostró una gran pasión por el arte. Estudió Bellas Artes en la Escuela de la Lonja de Barcelona, donde desarrolló su característico estilo surrealista y abstracto.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Parra ha expuesto sus obras en prestigiosas galerías y museos de todo el mundo, consolidándose como uno de los artistas españoles más importantes de su generación. A lo largo de su trayectoria, ha recibido numerosos premios y reconocimientos, entre ellos el Premio Nacional de Artes Plásticas de España en 2014. Actualmente, Gerardo Parra continúa creando obras experimentales desde su estudio en Barcelona. Su arte sigue cautivando a audiencias de todo el mundo, inspirando y desafiando los límites de la expresión artística.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		
+            <img  src="imagenes/img2.png" title="Img 2">
+        		<a href="EV_1.html">
+             <img src="imagenes/Img 2.png" title="Clic aquí">
+            </a>
+            <!--texto para la imagen-->
+        		
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Sala 2</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Matías De Gea es un joven artista de 31 años que proviene de una familia adinerada de Barcelona, España. Desde su infancia, estuvo rodeado de arte y cultura, lo que fomentó en él un profundo aprecio por la expresión creativa.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Estudió Bellas Artes en la Universidad de Sevilla, donde desarrolló un estilo único que fusiona elementos del arte conceptual, el minimalismo y la abstracción. A través de sus obras, explora temas de identidad, memoria y la naturaleza efímera de la existencia. A pesar de su corta edad, Matías De Gea ya ha recibido varios premios y becas, lo que subraya su talento y potencial como artista. Actualmente vive y trabaja en Barcelona, donde continúa creando obras experimentales que desafían las convenciones y amplían los límites del arte contemporáneo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+
+    		
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Clic aquí">
+        		<a href="EV_2.html">
+             <img src="imagenes/Img 3.png" title="Clic aquí">
+           </a>
+        <!--texto para la imagen-->
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Sala 3</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Martin Torres es un artista recién egresado de la Universidad de Artes de Barcelona, es hijo de un padre marroquí y una madre catalana. Su herencia multicultural ha influido profundamente en su desarrollo artístico, dándole una perspectiva única sobre la identidad, la cultura y la sociedad.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Si bien su carrera artística apenas comienza, Martín Torres ya ha exhibido su trabajo en varias galerías y espacios de arte en Barcelona. Su obra ha sido elogiada por su originalidad, su profundidad emocional y su capacidad para iniciar un diálogo sobre cuestiones sociales y culturales importantes. Martin Torres es un artista emergente a seguir. Su trabajo promete desafiar las normas, ampliar los límites del arte contemporáneo y arrojar luz sobre las complejidades de la experiencia humana en un mundo globalizado.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+    			  
+        		<img  src="imagenes/img4.png" title="Clic aquí">
+        		<!--texto para la imagen-->
+        		<a href="EV_3.html">
+             <img src="imagenes/Img 4.png" title="Clic aquí">
+            </a>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>

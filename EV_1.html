@@ -1,0 +1,21 @@
+<html>
+   <head>
+    <title>Hola, WebVR! - A-Frame</title>
+    <meta name="description" content="hello, WebVR! - A-Frame">
+     <!--con esta escript llamo-importo la libreria de A-Frame-->
+     <script src="http://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    </head>
+    <body>
+      
+        <a-assets>
+          <img id="MySky" crossorigin src="https://i.postimg.cc/Dw0Bdd5F/vecteezy-un-moderno-elegante-departamento-con-limpiar-parquet-piso-y-25490307.jpg">
+        </a-assets>
+        <a-scene>
+          <a-sky src="#MySky"></a-sky>
+
+        <a-box position="-1 1.25 -3" rotation="0 45 0" color="#0068ff"></a-box>
+        <a-cylinder position="1 0 -3" radius="0.5" height="1.5" color="#5fa8ff"></a-cylinder>
+        <a-sphere position="0 2.25 -5" radius="1.25" color="#fcff3e"></a-sphere>
+       </a-scene>
+   </body>
+<html>
